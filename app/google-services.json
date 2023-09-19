@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243651555361",
+    "firebase_url": "https://secretariainv-6d011-default-rtdb.firebaseio.com",
+    "project_id": "secretariainv-6d011",
+    "storage_bucket": "secretariainv-6d011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243651555361:android:b36a73a1f62d4c32887360",
+        "android_client_info": {
+          "package_name": "com.example.secretariainv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243651555361-nvi6e9fme3epdrlc1391hjofdbc9vr42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcYZ1qFfhoP9gLFXrGG7DrmsBxekHVU5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243651555361-nvi6e9fme3epdrlc1391hjofdbc9vr42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroComoVisitante">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/whatsappVisitante"
+            android:layout_width="409dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="44dp"
+            android:hint="Digite seu whatsapp"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@+id/nomeVisitante"
+            tools:layout_editor_absoluteX="12dp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="Telefone/Whatsapp"
+            app:layout_constraintBottom_toTopOf="@+id/whatsappVisitante"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/nomeVisitante"
+            android:layout_width="409dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="88dp"
+            android:hint="Digite aqui seu nome completo"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            tools:layout_editor_absoluteX="12dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/complete_name"
+            app:layout_constraintBottom_toTopOf="@+id/nomeVisitante"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/generoVisitante"
+            android:layout_width="413dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintTop_toBottomOf="@+id/whatsappVisitante"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/nascimentoVisitante"
+            android:layout_width="409dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="60dp"
+            android:hint="dia/mes/ano"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@+id/generoVisitante"
+            tools:layout_editor_absoluteX="12dp" />
+
+        <EditText
+            android:id="@+id/cepVisitante"
+            android:layout_width="409dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="44dp"
+            android:hint="Digite aqui seu CEP"
+            app:layout_constraintTop_toBottomOf="@+id/nascimentoVisitante"
+            tools:layout_editor_absoluteX="12dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Gênero"
+            app:layout_constraintBottom_toTopOf="@+id/generoVisitante"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="CEP"
+            app:layout_constraintBottom_toTopOf="@+id/cepVisitante"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Data de Nascimento"
+            app:layout_constraintBottom_toTopOf="@+id/nascimentoVisitante"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de visitantes NovaVida"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+            <Button
+                android:id="@+id/buttonEnviarVisitanteToFirebase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Enviar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cepVisitante" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

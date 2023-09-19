@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navDrawerButtonProfile"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="Conta NovaVida"
+            android:checked="true" />
+        <item
+            android:id="@+id/navDrawerButtonPrivacyPolicy"
+            android:icon="@drawable/baseline_description_24"
+            android:title="Politica de Privacidade"
+            android:checked="true" />
+        <item
+            android:id="@+id/navDrawerButtonDelAccount"
+            android:icon="@drawable/baseline_delete_24"
+            android:title="Excluir Conta"
+            android:checked="true" />
+        <item
+            android:id="@+id/navDrawerButtonExitApp"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            android:title="Exit"
+            android:checked="true" />
+    </group>
+</menu>

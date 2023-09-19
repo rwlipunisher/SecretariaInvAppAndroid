@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastrosHome">
+
+    <fragment
+        android:id="@+id/sendEditProfileFragment"
+        android:name="com.example.secretariainv.SendEditProfileFragment"
+        android:label="fragment_send_edit_profile"
+        tools:layout="@layout/fragment_send_edit_profile" >
+        <action
+            android:id="@+id/action_sendEditProfileFragment_to_basicInfo"
+            app:destination="@id/basicInfo" />
+        <action
+            android:id="@+id/action_sendEditProfileFragment_to_contactInfo"
+            app:destination="@id/contactInfo" />
+        <action
+            android:id="@+id/action_sendEditProfileFragment_to_churchInfo"
+            app:destination="@id/churchInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicInfo"
+        android:name="com.example.secretariainv.BasicInfo"
+        android:label="fragment_basic_info"
+        tools:layout="@layout/fragment_basic_info" >
+        <action
+            android:id="@+id/action_basicInfo_to_sendEditProfileFragment"
+            app:destination="@id/sendEditProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactInfo"
+        android:name="com.example.secretariainv.ContactInfo"
+        android:label="fragment_contact_info"
+        tools:layout="@layout/fragment_contact_info" >
+        <action
+            android:id="@+id/action_contactInfo_to_sendEditProfileFragment"
+            app:destination="@id/sendEditProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/churchInfo"
+        android:name="com.example.secretariainv.ChurchInfo"
+        android:label="fragment_church_info"
+        tools:layout="@layout/fragment_church_info" >
+        <action
+            android:id="@+id/action_churchInfo_to_sendEditProfileFragment"
+            app:destination="@id/sendEditProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrosHome"
+        android:name="com.example.secretariainv.CadastrosHome"
+        android:label="fragment_cadastros_home"
+        tools:layout="@layout/fragment_cadastros_home" >
+        <action
+            android:id="@+id/action_cadastrosHome_to_sendEditProfileFragment"
+            app:destination="@id/sendEditProfileFragment" />
+        <action
+            android:id="@+id/action_cadastrosHome_to_cadastroCriancas"
+            app:destination="@id/cadastroCriancas" />
+        <action
+            android:id="@+id/action_cadastrosHome_to_cadastroComoVisitante"
+            app:destination="@id/cadastroComoVisitante" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroCriancas"
+        android:name="com.example.secretariainv.CadastroCriancas"
+        android:label="fragment_cadastro_criancas"
+        tools:layout="@layout/fragment_cadastro_criancas" />
+    <fragment
+        android:id="@+id/cadastroComoVisitante"
+        android:name="com.example.secretariainv.CadastroComoVisitante"
+        android:label="fragment_cadastro_como_visitante"
+        tools:layout="@layout/fragment_cadastro_como_visitante" />
+
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:title="Bibble" />
+    <item android:title="Instagram" />
+    <item android:title="Facebook" />
+    <item android:title="Groups" />
+    <item android:title="My Notes" />
+</menu>

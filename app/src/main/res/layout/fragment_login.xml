@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Nome Cadastrado"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageAccout" />
+
+        <TextView
+            android:id="@+id/situacaoCadastralTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Buscando ... "
+            android:textSize="30dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomeUser" />
+
+        <TextView
+            android:id="@+id/funcaoIgreja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Funcao"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/situacaoCadastralTextView" />
+
+        <Button
+            android:id="@+id/buttonCriarContaApp"
+            android:layout_width="152dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="140dp"
+            android:text="Criar Conta"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwdTextView" />
+
+        <EditText
+            android:id="@+id/passwdTextView"
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Digite sua Senha"
+            android:inputType="textPassword"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="152dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="48dp"
+            android:text="Entrar"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwdTextView" />
+
+        <Button
+            android:id="@+id/buttonSair"
+            android:layout_width="152dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="48dp"
+            android:text="Sair"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwdTextView" />
+
+        <EditText
+            android:id="@+id/emailTextView"
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Digite seu e-mail"
+            android:visibility="gone"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/funcaoIgreja" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileImageAccout"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:elevation="0dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/profileImgLoginFragment"
+                android:src="@drawable/baseline_account_circle_24"
+                android:scaleType="fitXY"
+                android:clickable="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

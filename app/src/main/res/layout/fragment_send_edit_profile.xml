@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SendEditProfileFragment"
+    android:id="@+id/sendEditProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_cadastro_mebros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_cadastro"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/base_cardbasicinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/title_cadastro_mebros">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintbasicinfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinebasicinfo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="50dp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintbasicinfo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/guidelinebasicinfo1">
+
+                        <ListView
+                            android:id="@+id/listabasicinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            app:layout_constraintTop_toTopOf="@id/constraintbasicinfo2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <Button
+                        android:id="@+id/button_edit_basicdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/edit_button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintbasicinfo2"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewbasicinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@+id/constraintbasicinfo2"
+                        app:layout_constraintStart_toStartOf="@id/guidelinebasicinfo1"
+                        app:srcCompat="@drawable/baseline_perm_contact_calendar_24" />
+
+                    <TextView
+                        android:id="@+id/titleViewbasicinfo"
+                        android:layout_width="264dp"
+                        android:layout_height="29dp"
+                        android:text="@string/title_basic_data"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guidelinebasicinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.387"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.238" />
+
+                    <ImageView
+                        android:id="@+id/arrowbasicinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/guidelinebasicinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_downward_24" />
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/card_groupbasicinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:constraint_referenced_ids="constraintbasicinfo2"
+                        app:layout_constraintTop_toTopOf="@id/constraintbasicinfo2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/base_cardcontactinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/base_cardbasicinfo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintcontactinfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinecontactinfo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="50dp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintcontactinfo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/guidelinecontactinfo1">
+
+                        <ListView
+                            android:id="@+id/listacontactinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:layout_constraintTop_toTopOf="@id/constraintcontactinfo2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <Button
+                        android:id="@+id/button_edit_contactdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/edit_button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintcontactinfo2"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewcontactinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@+id/constraintcontactinfo2"
+                        app:layout_constraintStart_toStartOf="@id/guidelinecontactinfo1"
+                        app:srcCompat="@drawable/baseline_connect_without_contact_24" />
+
+                    <TextView
+                        android:id="@+id/titleViewcontactinfo"
+                        android:layout_width="264dp"
+                        android:layout_height="29dp"
+                        android:text="@string/title_contact_info"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guidelinecontactinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.387"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.238" />
+
+                    <ImageView
+                        android:id="@+id/arrowcontactinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/guidelinecontactinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_downward_24" />
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/card_groupcontactinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:constraint_referenced_ids="constraintcontactinfo2"
+                        app:layout_constraintTop_toTopOf="@id/constraintcontactinfo2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/base_cardchurchinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/base_cardcontactinfo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintchurchinfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinechurchinfo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="50dp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintchurchinfo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/guidelinechurchinfo1">
+
+                        <ListView
+                            android:id="@+id/listachurchinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:layout_constraintTop_toTopOf="@id/constraintchurchinfo2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <Button
+                        android:id="@+id/button_edit_churchdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/edit_button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintchurchinfo2"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewchurchinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@+id/constraintchurchinfo2"
+                        app:layout_constraintStart_toStartOf="@id/guidelinechurchinfo1"
+                        app:srcCompat="@drawable/baseline_church_24" />
+
+                    <TextView
+                        android:id="@+id/titleViewchurchinfo"
+                        android:layout_width="264dp"
+                        android:layout_height="29dp"
+                        android:text="@string/title_church_info"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/guidelinechurchinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.387"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.238" />
+
+                    <ImageView
+                        android:id="@+id/arrowchurchinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/guidelinechurchinfo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_downward_24" />
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/card_groupchurchinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:constraint_referenced_ids="constraintchurchinfo2"
+                        app:layout_constraintTop_toTopOf="@id/constraintchurchinfo2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewImageProfile"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:elevation="0dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/base_cardchurchinfo">
+
+                <ImageView
+                    android:id="@+id/avatarimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/avatar" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatinButtonPickProfileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:src="@drawable/baseline_change_circle_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/base_cardchurchinfo" />
+
+            <Button
+                android:id="@+id/buttonSendToFirebase"
+                android:layout_width="210dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="40dp"
+                android:contextClickable="true"
+                android:text="Enviar p/ Analise"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewImageProfile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
