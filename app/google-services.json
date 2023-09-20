@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640506337013",
+    "project_id": "secretariainv-f126a",
+    "storage_bucket": "secretariainv-f126a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640506337013:android:816c0cd4f799eeabc897bc",
+        "android_client_info": {
+          "package_name": "rwl.churchbasic.secretariainv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3_6AC18R3tnpYQjoNxJlW6j-LqfY2vAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
